@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="author" content="Blen Michil">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stijl.css">
+  </head>
+  <body style="background-color:gray">
+    <p><img src="http://ma-web.nl/static/vector/logo blok.svg" width="30"> ajax5</p>
+    <input type="text" id="searchCountry" placeholder="zoek een land">
+    <div id="txtHint">Hier komt de lijst</div>
+    <script>
+      searchCountry = document.getElementById('searchCountry');
+      searchCountry.addEventListener('keyup', function(){
+        showList(searchCountry.value, 'list');
+      });
+    </script>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
